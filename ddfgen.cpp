@@ -9,6 +9,8 @@
 #include <exception>
 using namespace std;
 namespace fs=filesystem;
+string author="Vahab Programmer https://github.com/Vahab-Programmer";
+string version="0.0.1";
 void clscreen(){
     #ifdef _WIN32
     system("cls");
