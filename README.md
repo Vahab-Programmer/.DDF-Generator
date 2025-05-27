@@ -1,7 +1,7 @@
 # .DDF File Generator
 I Programmed A C Plus Plus Program To Generate .DDF File Generator
 
-A .ddf file often called a Data Definition Format file
+A .ddf file often called a Diamond Directive File file
 
 When You Want To Create A .CAB File you can Generate a .DDF File using The Program With
 
