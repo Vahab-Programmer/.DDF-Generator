@@ -11,4 +11,10 @@ and Then
 
     makecab /F output.ddf
 
+To Compile The Program
+
+    g++ -o ddfgen ddfgen.cpp -std=c++20 
+or
+
+    g++ -o ddfgen ddfgen.cpp -std=c++20 -Ofast
 And Like This You Have A .CAB File!!!
