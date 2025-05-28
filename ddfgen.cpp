@@ -119,9 +119,11 @@ int main(){
     }
     getin("Enter File Path to add(Enter None For Skip):",tfile);
     while (!tfile.empty()){
-        output+="\"";
-        output+=tfile;
-        output+="\"\n";
+        if (fs::exists(tfile)){
+            output+="\"";
+            output+=tfile.c_str();
+            output+="\"\n";
+        };
         getin("Enter File Path to add(Enter None For Skip):",tfile);
     }
     getin("Enter Path To Add(Enter None For Skip):",tdir);
