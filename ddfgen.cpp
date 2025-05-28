@@ -9,6 +9,8 @@
 #include <exception>
 using namespace std;
 namespace fs=filesystem;
+string author="Vahab Programmer https://github.com/Vahab-Programmer";
+string version="0.0.1";
 void clscreen(){
     #ifdef _WIN32
     system("cls");
@@ -83,7 +85,7 @@ int main(){
     getin("Name For .DDF File:",ddffn);
     if (ddffn.empty())ddffn="output.ddf";
     else if (!ddffn.ends_with(".ddf"))ddffn+=".ddf";
-    getinbyint(comptype,{{1,"LZX"},{2,"MSZIP"},{3,"QUANTUM"},{4,"NONE"}});
+    getinbyint(comptype,{{1,"LZX"},{2,"MSZIP"},{3,"NONE"}});
     if (comptype!="NONE"){
         output+=".Set Compress=ON\n";
         output+=".Set CompressionType=";
