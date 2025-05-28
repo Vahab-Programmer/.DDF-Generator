@@ -100,7 +100,7 @@ int main(){
     } else {
         output+=".Set UniqueFiles=OFF\n";
     }
-    getin("Disk Label(Enter None For Skip,Byte):",dl);
+    getin("Disk Label(Enter None For Skip):",dl);
     if (!dl.empty()){
         output+=".Set DiskLabel=";
         output+=dl;
