@@ -83,7 +83,7 @@ int main(){
     getin("Name For .DDF File:",ddffn);
     if (ddffn.empty())ddffn="output.ddf";
     else if (!ddffn.ends_with(".ddf"))ddffn+=".ddf";
-    getinbyint(comptype,{{1,"LZX:21"},{2,"LZX:15"},{3,"MSZIP"},{4,"QUANTUM"},{5,"NONE"}});
+    getinbyint(comptype,{{1,"LZX"},{2,"MSZIP"},{3,"QUANTUM"},{4,"NONE"}});
     if (comptype!="NONE"){
         output+=".Set Compress=ON\n";
         output+=".Set CompressionType=";
